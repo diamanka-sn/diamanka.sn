@@ -1,0 +1,53 @@
+#text {
+  font-size: 20px;
+}
+
+.curseur-effect {
+  font-size: 24px;
+  font-family: sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.curseur-effect::after {
+  content: '|';
+  animation: cursor-blink 0.7s infinite;
+  display: inline-block;
+}
+
+@keyframes cursor-blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+// puces contact
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a i {
+  font-size: 4rem;
+}
+
+.contact {
+  margin-bottom: 15px;
+}
