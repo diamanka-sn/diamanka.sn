@@ -5,5 +5,19 @@
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto align-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <button class="btn btn-link toggle-theme" id="toggleTheme" (click)="toggleTheme()">
+                        <i class="bi bi-sun-fill" id="dayIcon" [class.d-none]="isNightMode"></i>
+                        <i class="bi bi-moon-fill" id="nightIcon" [class.d-none]="!isNightMode"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>
+

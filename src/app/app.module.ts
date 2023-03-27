@@ -8,6 +8,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
+import { ThemeService } from './theme.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,7 @@ import { FooterComponent } from './component/footer/footer.component';
     AppRoutingModule,
     FontAwesomeModule
   ],
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
