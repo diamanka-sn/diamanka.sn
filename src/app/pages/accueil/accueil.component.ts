@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 
 export class AccueilComponent {
 
-  textArray: string[] = ["Architecte logiciel", "</>Developpeur Full-Stack", "P A S S I O N N E"];
+  textArray: string[] = ["Architecte logiciel", "Développeur Full-Stack", "P A S S I O N N E"];
   currentIndex: number = 0;
   currentChar: number = 0;
   displayText: string = "";
