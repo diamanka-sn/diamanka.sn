@@ -9,6 +9,10 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './component/header/header.component';
 import { FooterComponent } from './component/footer/footer.component';
 import { ThemeService } from './theme.service';
+import { RecaptchaModule } from 'ng-recaptcha';
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,11 +20,14 @@ import { ThemeService } from './theme.service';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    RecaptchaModule,
+    HttpClientModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

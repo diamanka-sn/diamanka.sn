@@ -2,3 +2,52 @@
   background-color: #043249;
   color: lightblue;
 }
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul li:last-child {
+  margin-right: 0;
+}
+
+ul li a i {
+  font-size: 2.5rem;
+}
+
+i {
+  color: #043249;
+}
+
+p{
+  text-align: left;
+  max-width: 350px; /* Modifier la valeur pour ajuster la largeur maximale */
+  margin: 0 auto;
+}
+
+.contact{
+  margin-top: 10px;
+  text-align: left;
+  max-width: 350px; /* Modifier la valeur pour ajuster la largeur maximale */
+  margin: 0 auto;
+}
+
+.curseur-effect {
+  font-size: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.curseur-effect::after {
+  content: '|';
+  animation: cursor-blink 0.7s infinite;
+  display: inline-block;
+}

@@ -21,6 +21,7 @@
     "@fontsource/jetbrains-mono": "^4.5.12",
     "@fortawesome/angular-fontawesome": "^0.12.1",
     "bootstrap-icons": "^1.10.3",
+    "ng-recaptcha": "^11.0.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.12.0"
