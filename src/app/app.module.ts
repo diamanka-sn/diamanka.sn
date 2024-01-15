@@ -11,6 +11,7 @@ import { FooterComponent } from './component/footer/footer.component';
 import { ThemeService } from './theme.service';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { HttpClientModule } from '@angular/common/http';
+import { BlogComponent } from './pages/blog/blog.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
+    BlogComponent,
     
   ],
   imports: [
@@ -27,7 +29,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FontAwesomeModule,
     RecaptchaModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

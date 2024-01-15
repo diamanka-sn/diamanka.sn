@@ -20,9 +20,11 @@
   0% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
+
   100% {
     opacity: 0;
   }
@@ -51,15 +53,127 @@ ul li a i {
 .contact {
   margin-bottom: 15px;
 }
+
 i {
-  color: #043249;
+  color: #3a4dcb;
 }
 
 #bord {
-  border-color: #043249;
+  border-color: #3a4dcb;
 }
 
 
-//abre
+// /* Définition de l'animation */
+// @keyframes moveUpDown {
+//   0% {
+//     transform: translateY(0);
+//   }
+
+//   50% {
+//     transform: translateY(20px);
+//   }
+
+//   100% {
+//     transform: translateY(0);
+//   }
+// }
+
+// .hero-img-wrap img {
+//   animation: moveUpDown 3s ease-in-out infinite;
+// }
 
 
+.code-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // background-color: #1a1a1a; /* Couleur de fond du code */
+  z-index: -1;
+  /* Assure que l'arrière-plan est en arrière du contenu */
+  opacity: 0.9;
+  /* Ajustez l'opacité selon vos préférences */
+  pointer-events: none;
+  /* Empêche les interactions avec cet élément */
+}
+
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.large-container {
+  position: static;
+  max-width: 1580px;
+  padding: 0px 30px;
+  margin: 0 auto;
+}
+
+.testimonial-section {
+  position: absolute;
+}
+
+.testimonial-section:before {
+  position: absolute;
+  left: -200px;
+  top: 22%;
+  background-image: url(http://t.commonsupport.com/adro/images/icons/ring-circle.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 701px;
+  height: 756px;
+  content: "";
+  -webkit-animation: fa-spin 25s infinite alternate;
+  -moz-animation: fa-spin 25s infinite alternate;
+  -ms-animation: fa-spin 25s infinite alternate;
+  -o-animation: fa-spin 25s infinite alternate;
+  animation: fa-spin 25s infinite alternate;
+}
+
+.testimonial-carousel .owl-next,
+.testimonial-carousel .owl-prev {
+  margin-top: 0px;
+  position: relative;
+  display: inline-block;
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  border-radius: 50%;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+}

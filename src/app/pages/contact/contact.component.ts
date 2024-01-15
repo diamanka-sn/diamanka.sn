@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  textArray: string[] = ["Discutons projets.", "Échangeons sur nos projets.", "Réfléchissons ensemble à nos projets.", "Collaborons sur nos projets."];
+  textArray: string[] = ["M O U H A M A D O U", "D I A M A N K A."];
 
   currentIndex: number = 0;
   currentChar: number = 0;
@@ -17,9 +17,9 @@ export class ContactComponent {
 
   cursorBlink: boolean = true;
 
-  whatsappNumber: string = "+221778795172";
   twitterHandle: string = "diamanka_sn";
   githubUsername: string = "diamanka-sn";
+  linkdinUsername:string ="diamanka-sn"
   
   constructor(private http: HttpClient) {}
 
@@ -60,7 +60,7 @@ export class ContactComponent {
   }
 
   get cursor(): string {
-    return this.cursorBlink ? '|' : ' '; // Use HTML non-breaking space
+    return this.cursorBlink ? '|' : ' '; 
   }
 
 }

@@ -1,13 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
-body {
-    font-family: "JetBrains Mono";
-  }
+.text-btn-theme{
+  color: #3a4dcb;
+}
 
-  [data-theme='light'] {
-    /* styles pour le thème clair */
+
+.btn-theme-outline {
+  background-color: transparent;
+  border: 1px solid #3a4dcb;
+  color: #3a4dcb;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-theme-outline:hover{
+  background-color: #3a4dcb;
+  color: #fff;
+}
+
+.text-theme {
+  color: #3a4dcb !important;
+  font-weight: bold;
+}
+
+.btn-theme {
+  background-color: #3a4dcb;
+  border-color: #3a4dcb;
+  color: #fff;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.btn-theme:hover {
+  background-color: #3a4dcb;
+  border-color: #3a4dcb;
+  color: #fff;
+}
+
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff;
+}
+
+.letter {
+  color: #3a4dcb;
+  font-size: 36px;
+  margin: 10px;
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
-  
-  [data-theme='dark'] {
-    /* styles pour le thème sombre */
+  40% {
+    transform: translateY(-30px);
   }
-  
+  60% {
+    transform: translateY(-15px);
+  }
+}

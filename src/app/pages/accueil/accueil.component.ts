@@ -1,22 +1,21 @@
-import { Component } from '@angular/core';
-
+import { AfterViewInit, Component } from '@angular/core';
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.scss']
+  styleUrls: ['./accueil.component.scss'],
 })
 
 export class AccueilComponent {
 
-  textArray: string[] = ["Architecte logiciel", "Développeur Full-Stack", "P A S S I O N N É"];
+  textArray: string[] = ["Développeur Full Stack 🐼", "P A S S I O N N É", "M O U H A M A D O U", "D I A M A N K A"];
   currentIndex: number = 0;
   currentChar: number = 0;
   displayText: string = "";
   isDeleting: boolean = false;
 
-  whatsappNumber: string = "+221778795172";
   twitterHandle: string = "diamanka_sn";
   githubUsername: string = "diamanka-sn";
+  linkdinUsername: string = "diamanka-sn"
 
   cursorBlink: boolean = true;
 
@@ -25,9 +24,9 @@ export class AccueilComponent {
   constructor() {
     const hour = new Date().getHours();
     if (hour >= 6 && hour < 14) {
-      this.greeting = 'Bonjour';
+      this.greeting = 'B O N J O U R ';
     } else {
-      this.greeting = 'Bonsoir';
+      this.greeting = 'B O N S O I R';
     }
   }
 
@@ -50,7 +49,7 @@ export class AccueilComponent {
       this.currentChar++
       if (this.currentChar === currentText.length + 1) {
         this.isDeleting = true
-        setTimeout(() => this.typeText(), 2000) // Wait 1 second before deleting
+        setTimeout(() => this.typeText(), 2000)
         return
       }
     }
@@ -60,7 +59,7 @@ export class AccueilComponent {
   }
 
   get cursor(): string {
-    return this.cursorBlink ? '|' : ' '; // Use HTML non-breaking space
-  }
-
+    return this.cursorBlink ? '|' : ' ';
+  } 
+  
 }

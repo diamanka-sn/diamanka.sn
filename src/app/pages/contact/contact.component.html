@@ -1,56 +1,53 @@
 <div class="container mt-5 mb-3">
-    <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0 border-end">
-            <span class="curseur-effect">{{ displayText }}</span>
-            <h3 class="mt-3 mb-3"><i class="bi bi-caret-right-fill"></i>Me contacter</h3>
-            <form>
-
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control border-0 border-bottom mb-4"
-                        placeholder="Prenom" required>
-                    </div>
-                    <div class="col">
-                        <input type="text" class="form-control border-0 border-bottom mb-4" placeholder="Nom"
-                                required>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control border-0 border-bottom mb-4"
-                        placeholder="Adresse email" required>
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control border-0 border-bottom mb-4" placeholder="Objet" required>
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control border-0 border-bottom mb-4" placeholder="Message" rows="5"
-                        required></textarea>
-                </div>
-                <re-captcha #captchaRef siteKey="6LexdzQlAAAAAEBVGx048OJ4UIEqFYHCfX3zPFPe"></re-captcha>
-                <button type="submit" class="btn mt-3">Envoyer</button>
-            </form>
-        </div>
-        <div class="col-sm-6 mt-100">
-            <div class="container">
-                <ul class="contact">
-                  <li>
-                    <a href="https://github.com/{{ githubUsername }}">
-                      <i class="bi bi-github"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com/{{ twitterHandle }}"><i class="bi bi-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://wa.me/{{ whatsappNumber }}"> <i class="bi bi-whatsapp"></i>
-                    </a>
-                  </li>
-                </ul>
-                <p class="mt-2">Ensemble, réalisons nos projets les plus ambitieux.</p>
-                <p class="mt-3"> Il me ferait grand plaisir de vous apporter mon aide pour concrétiser vos projets de développement et contribuer à leur succès.</p>
+  <div class="row">
+      <div class="col-md-6 mb-3 mb-md-0 border-md-end">
+          <span class="curseur-effect text-theme">{{ displayText }}</span>
+          <h3 class="mt-3 mb-3"><i class="bi bi-caret-right-fill"></i>Me contacter</h3>
+          <form class="mb-5">
+              <div class="row">
+                  <div class="col-12 col-md-6">
+                      <input type="text" class="form-control border-0 border-bottom mb-4"
+                      placeholder="Prenom" required>
+                  </div>
+                  <div class="col-12 col-md-6">
+                      <input type="text" class="form-control border-0 border-bottom mb-4" placeholder="Nom"
+                              required>
+                  </div>
               </div>
-        </div>
-    </div>
-
+              <div class="form-group">
+                  <input type="email" class="form-control border-0 border-bottom mb-4"
+                      placeholder="Adresse email" required>
+              </div>
+              <div class="form-group">
+                  <input type="text" class="form-control border-0 border-bottom mb-4" placeholder="Objet" required>
+              </div>
+              <div class="form-group">
+                  <textarea class="form-control border-0 border-bottom mb-4" placeholder="Message" rows="5"
+                      required></textarea>
+              </div>
+              <re-captcha #captchaRef siteKey="6LexdzQlAAAAAEBVGx048OJ4UIEqFYHCfX3zPFPe"></re-captcha>
+              <button type="submit" class="btn btn-theme mt-3">Envoyer</button>
+          </form>
+      </div>
+      <div class="col-md-6 mt-3 mt-md-0">
+          <div class="container">
+              <ul class="contact">
+                  <li>
+                      <a href="https://github.com/{{ githubUsername }}">
+                          <i class="bi bi-github"></i>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="https://twitter.com/{{ twitterHandle }}"><i class="bi bi-twitter"></i>
+                      </a>
+                  </li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/{{ linkdinUsername }}/">
+                        <i class="bi bi-linkedin bi-sm"></i>
+                    </a>
+                </li>
+              </ul>
+            </div>
+      </div>
+  </div>
 </div>
